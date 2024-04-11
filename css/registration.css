@@ -77,20 +77,20 @@ body {
     color: #333;
     font-weight: 600;
 }
-.wrapper .login-link{
+.wrapper .register-link{
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 50px;
     
 }
 
-.login-link p a{
+.register-link p a{
     color: #fff;
     text-decoration: none;
     margin-top: 600;
 }
 
-.login-link p a :hover {
+.register-link p a :hover {
     text-decoration: underline;
 }
 

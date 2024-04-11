@@ -7,11 +7,11 @@ class Post {
         this.#message = message
     }
 
-    getId(){
+    get id(){
         return this.#id
     }
 
-    getMessage(){
+    get message(){
         return this.#message
     }
 }
