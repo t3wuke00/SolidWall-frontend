@@ -2,6 +2,7 @@ import { BACKEND_URL } from "../config.js";
 import { Post } from "./Post.js";
 
 
+
 class Posts{
     #posts = []
 
@@ -18,22 +19,22 @@ class Posts{
         })
     }
 
-    addPost = (message_text) => {
-        return new Promise(async(resolve, reject) => {
-            const json = JSON.stringify({message:message_text})
-            fetch(BACKEND_URL + '/new',{
-                method: 'post',
-                headers: {'Content-Type':'application/json'},
-                body: json
-            })
-            .then(response => response.json())
-            .then(json => {
-                resolve(this.#addToArray(json.id,message_text))
-            }),(error => {
-                reject(error)
-            })
+    async addPost(formData,token) {
+        console.log(formData)
+        const response = await fetch(BACKEND_URL + '/new',{
+          method: 'post',
+          headers: {'Content-Type':'application/json'},
+          //headers: {Authorization: token},
+          body: formData
         })
-    }
+    
+        if (response.ok === true) {
+          const json = await response.json()
+          return this.#addToArray(json.id,json.message)
+        } else {
+          throw response.statusText
+        }
+      }
 
     removePost = (id) => {
         return new Promise(async(resolve, reject) => {
