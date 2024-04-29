@@ -45,7 +45,28 @@
 <div class="row">
   <div class="col-md-8">
     <h3>Add post</h3>
-    <form>
+
+
+    <div class="form-container">
+      <form>
+        <div class="input-group">
+          <label class="form-label" for="title">Title</label>
+          <input type="text" class="form-control" id="title">
+        </div>
+        <div class="input-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-control" id="message"></textarea>
+        </div>
+        <div class="button-group">
+          
+          <button type="submit" class="btn btn-primary" id="save-button">Save</button>
+        </div>
+      </form>
+    </div>
+    
+
+
+    <!-- <form>
       <div>
         <label class="form-label">Title</label>
         <input type="text" class="form-control" id="title">
@@ -56,7 +77,11 @@
       </div>
       <div>
       <button type="submit" class="btn btn-primary" id="save-button">Save</button>
-    </form>
+    </form> -->
+
+
+
+
   </div>
 
 </div>
@@ -66,5 +91,7 @@
 <script type="module" src="./js/addpost.js"></script>
 <script src="script.js"></script>
 <script src="story.js"></script> <!-- Link to your JavaScript file -->
+
+
 </body>
 </html>
