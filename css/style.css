@@ -9,3 +9,60 @@ article span a {
 article span a:hover {
     font-weight: bold;
 }
+
+
+h1{
+    text-align: center;
+    color: rgb(254, 254, 254);
+    font-size: 350%;
+    font-variant:small-caps;
+    background-color: rgb(243, 144, 15);
+     
+}
+
+#Home{
+    display: flex;
+    justify-content: space-between; /* To push the elements to the left and right edges */
+    align-items: center; /* To vertically center the items */
+
+    font-size: 200%;
+    background-color: rgb(222, 209, 209); 
+    font:bold
+    
+}
+
+.nav-item {
+    margin: 1%; /* Reset margin */
+}
+#log{
+   
+    margin-left:auto;  
+}
+#about{
+    margin: auto /* This pushes the About link to the center */
+}
+#story{
+    margin: auto;
+}
+#contact{
+    margin: auto;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0); /* Change 'blue' to your desired color */
+    text-decoration: none; /* Remove underline from links if desired */
+}
+
+
+#phone-number {
+    color: rgb(255, 140, 0); /* Change to your desired color */
+    font-size: 40px; /* Change to your desired font size */
+    text-decoration: underline;
+    text-align: center;
+    background:local
+
+}
+
+
+
+ 
