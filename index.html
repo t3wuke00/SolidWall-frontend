@@ -5,13 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
+
+    <style>
+        .navigation {
+            margin-top: 0; /* Set margin-top to 0 */
+            padding-top: 0; /* Set padding-top to 0 */
+        }
+        .nav-item {
+            margin: 0; /* Set margin of nav-items to 0 */
+        }
+    </style>
 </head>
 <body>
-    <h1>SolidWall</h1>
+    <header>
+        
+        <h1>SolidWall</h1>
+        <div id="Home" class="navigation">
+            <p class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </p>
+            <div id="story">
+                <a class="nav-link" href="story.html">Story</a>
+            </div>
+            <div>
+                <ul class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </ul> 
+            </div>
+            <div id="about">
+                <a class="nav-link" href="about.html">About</a>
+            </div>
+            <div id="contact">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+            <div id="profile">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </div>
+            <div id="log">
+                <a class="nav-link" href="login.html">Logout</a>
+            </div>
+        </div>
+        
+    </header>
+    
 
     <div class="link-container">
-        <a id="add-new-post-link" href="addpost.html" style="color: black;">Add New Post</a>
-        <a class="nav-link" href="login.html" id="login-link" style="text-decoration:underline;">Login</a>
+        <div class="link-container" style="border: 1px solid black; padding: 0px;">
+            <a id="add-new-post-link" href="addpost.html" style="color: black;">Add New Post</a>
+          </div>
       </div>
       
 
@@ -21,9 +63,21 @@
     
     <div id ="posts"></div>
     <div id="save">
-        <script type = "module" src="./js/index.js"></script>
+    <script type = "module" src="./js/index.js"></script>  
     <script type = "module" src="./js/user.js"></script>
+    <script type="module" src="./js/about.js"></script>
     </div>
+
+
+
+
+
+    
+        </nav>
+    </p>
+    <footer>
+        &copy; 2024 SolidWall. All rights reserved.
+    </footer>
     
 </body>
 </html>
