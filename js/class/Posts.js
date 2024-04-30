@@ -11,6 +11,7 @@ class Posts{
             fetch(BACKEND_URL)
         .then(response => response.json())
         .then(json => {
+            console.log(json)
        this.#readJson(json)
        resolve(this.#posts)
     }),(error) => {
@@ -53,7 +54,8 @@ class Posts{
     
     #readJson = (json) => {
         json.forEach(node => {
-            const post = new Post(node.id,node.message)
+            const post = new Post(node.id,node.title,node.message,node.saved,node.email)
+            console.log(post)
             this.#posts.push(post)
         });
     }
